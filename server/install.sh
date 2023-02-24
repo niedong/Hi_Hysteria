@@ -535,8 +535,8 @@ EOF
 	read remarks
     echoColor green "\n配置录入完成!\n"
     echoColor yellowBlack "执行配置..."
-    download=$(($download + $download / 10))
-    upload=$(($upload + $upload / 10))
+    # download=$(($download + $download / 10))
+    # upload=$(($upload + $upload / 10))
     r_client=$(($delay * 2 * $download / 1000 * 1024 * 1024))
     r_conn=$(($r_client / 4))
     if echo "${useAcme}" | grep -q "false";then
